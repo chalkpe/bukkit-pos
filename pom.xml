@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
 
     <name>pos</name>
-    <description>pos for Minecraft server</description>
+    <description>FFXIV-like pos for Minecraft servers</description>
     <url>https://github.com/ChalkPE/bukkit-pos</url>
     <inceptionYear>2019</inceptionYear>
 
