@@ -20,8 +20,9 @@ class Main: JavaPlugin(), Listener {
         if (e.isCancelled) return
 
         val loc = e.player.location
-        val pos = "${format(loc.blockX)}, ${format(loc.blockY)}, ${format(loc.blockZ)}"
+        val biome = getBiomeName(loc.block.biome)
 
-        e.message = e.message.replace("<pos>", pos).replace("<ㅔㅐㄴ>", pos)
+        val pos = "$biome (${format(loc.blockX)}, ${format(loc.blockY)}, ${format(loc.blockZ)})"
+        e.message = e.message.replace("<pos>", pos).replace("<ㅔㅐㄴ>", pos).replace("<좌표>", pos)
     }
 }
