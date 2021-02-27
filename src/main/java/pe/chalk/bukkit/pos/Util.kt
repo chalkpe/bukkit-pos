@@ -1,6 +1,11 @@
 package pe.chalk.bukkit.pos
 
+import org.bukkit.ChatColor
 import org.bukkit.block.Biome
+
+fun format(x: Int): String {
+    return "${ChatColor.BOLD}${ChatColor.AQUA}$x${ChatColor.RESET}"
+}
 
 fun getBiomeName(biome: Biome): String {
     // from .minecraft/assets 1.16 (minecraft/lang/ko_kr.json)
