@@ -2,7 +2,7 @@ name: Build and deploy
 
 on:
   push:
-    tags:        
+    tags:
       - 'v*'
 
 jobs:
