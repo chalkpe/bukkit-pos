@@ -6,7 +6,7 @@
 
     <groupId>pe.chalk.bukkit</groupId>
     <artifactId>bukkit-pos</artifactId>
-    <version>1.1</version>
+    <version>1.2</version>
 
     <packaging>jar</packaging>
 
@@ -27,7 +27,7 @@
         <developer>
             <id>ChalkPE</id>
             <name>Chalk</name>
-            <url>http://chalk.moe</url>
+            <url>https://chalk.moe/@chalk</url>
             <email>chalkpe@gmail.com</email>
             <roles>
                 <role>developer</role>
@@ -43,7 +43,7 @@
 
     <properties>
         <project.mainClass>pe.chalk.bukkit.pos.Main</project.mainClass>
-        <kotlin.version>1.4.31</kotlin.version>
+        <kotlin.version>1.7.21</kotlin.version>
     </properties>
 
     <repositories>
@@ -57,7 +57,7 @@
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>1.16.5-R0.1-SNAPSHOT</version>
+            <version>1.19.3-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
