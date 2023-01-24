@@ -13,11 +13,11 @@ jobs:
       - uses: actions/setup-java@v3
         with:
           distribution: 'temurin'
-          java-version: '18'
+          java-version: '17'
           cache: 'maven'
       - run: mvn install
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           files: |
-            target/*.jar
+            target/bukkit-pos-*.jar
