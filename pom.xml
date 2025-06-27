@@ -6,13 +6,13 @@
 
     <groupId>pe.chalk.bukkit</groupId>
     <artifactId>bukkit-pos</artifactId>
-    <version>1.2.3</version>
+    <version>1.2.4</version>
 
     <packaging>jar</packaging>
 
     <name>pos</name>
     <description>FFXIV-like pos for Minecraft servers</description>
-    <url>https://github.com/ChalkPE/bukkit-pos</url>
+    <url>https://github.com/chalkpe/bukkit-pos</url>
     <inceptionYear>2019</inceptionYear>
 
     <licenses>
@@ -25,7 +25,7 @@
 
     <developers>
         <developer>
-            <id>ChalkPE</id>
+            <id>chalkpe</id>
             <name>Chalk</name>
             <url>https://chalk.moe/@chalk</url>
             <email>chalkpe@gmail.com</email>
@@ -37,7 +37,7 @@
     </developers>
 
     <issueManagement>
-        <url>https://github.com/ChalkPE/bukkit-pos/issues</url>
+        <url>https://github.com/chalkpe/bukkit-pos/issues</url>
         <system>GitHub Issues</system>
     </issueManagement>
 
@@ -58,7 +58,7 @@
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>1.19.3-R0.1-SNAPSHOT</version>
+            <version>1.21.4-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>

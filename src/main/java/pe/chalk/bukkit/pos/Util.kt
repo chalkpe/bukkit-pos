@@ -9,7 +9,7 @@ fun format(x: Int): String {
 
 fun getBiomeName(biome: Biome): String {
     // from .minecraft/assets (minecraft/lang/ko_kr.json)
-    return when(biome.name.toLowerCase()) {
+    return when(biome.toString().lowercase()) {
         "badlands" -> "악지"
         "bamboo_jungle" -> "대나무 정글"
         "basalt_deltas" -> "현무암 삼각주"
@@ -49,6 +49,7 @@ fun getBiomeName(biome: Biome): String {
         "old_growth_birch_forest" -> "자작나무 원시림"
         "old_growth_pine_taiga" -> "소나무 원시 타이가"
         "old_growth_spruce_taiga" -> "가문비나무 원시 타이가"
+        "pale_garden" -> "창백한 정원"
         "plains" -> "평원"
         "river" -> "강"
         "savanna" -> "사바나"

@@ -2,6 +2,7 @@ package pe.chalk.bukkit.pos
 
 import org.bstats.bukkit.Metrics
 import org.bukkit.event.EventHandler
+import org.bukkit.event.EventPriority
 import org.bukkit.plugin.java.JavaPlugin
 import org.bukkit.event.Listener
 import org.bukkit.event.player.AsyncPlayerChatEvent
@@ -15,7 +16,7 @@ class Main: JavaPlugin(), Listener {
         Metrics(this, 17524)
     }
 
-    @EventHandler
+    @EventHandler(priority = EventPriority.LOW)
     @Suppress("RedundantVisibilityModifier")
     public fun onPlayer(e: AsyncPlayerChatEvent) {
         if (e.isCancelled) return
