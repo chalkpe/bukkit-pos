@@ -7,9 +7,28 @@ fun format(x: Int): String {
     return "${ChatColor.BOLD}${ChatColor.AQUA}$x${ChatColor.RESET}"
 }
 
+/**
+ * 바이옴의 키에서 이름 부분을 꺼낸다 (`minecraft:plains` → `plains`).
+ * 예전에는 `toString()` 이 `PLAINS` 를 돌려줬지만, Biome 이 enum 이 아니게 된 뒤로 서버 구현마다 다르다
+ * (Paper 26.3 은 구현 객체의 설명 문자열을 돌려준다). 키는 Spigot 과 Paper 모두 같다.
+ */
+@Suppress("DEPRECATION")
+fun getBiomeId(biome: Biome): String? {
+    return try {
+        biome.key.key.lowercase()
+    } catch (e: Exception) {
+        // 레지스트리에 없는 바이옴은 키가 없다
+        null
+    }
+}
+
 fun getBiomeName(biome: Biome): String {
+    return getBiomeName(getBiomeId(biome))
+}
+
+fun getBiomeName(id: String?): String {
     // from .minecraft/assets (minecraft/lang/ko_kr.json)
-    return when(biome.toString().lowercase()) {
+    return when(id) {
         "badlands" -> "악지"
         "bamboo_jungle" -> "대나무 정글"
         "basalt_deltas" -> "현무암 삼각주"

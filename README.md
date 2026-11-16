@@ -1,6 +1,6 @@
 # bukkit-pos
 
-![Minecraft 26.2](https://img.shields.io/badge/minecraft-26.2-red?style=flat-square)
+![Minecraft 26.3](https://img.shields.io/badge/minecraft-26.3-red?style=flat-square)
 
 [FFXIV](https://finalfantasyxiv.com)-like &lt;pos&gt; for [Minecraft](https://minecraft.net) servers
 
